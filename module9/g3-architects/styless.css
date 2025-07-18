@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styled */
+.display-flex {
+  display: flex;
+}
+/* dark02 */
+.text-gray {
+  color: #424242;
+}
+/* dark03 */
+.text-light-gray {
+  color: #727272;
+}
+.text-primary {
+  color: #ff900e;
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #ff900e;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  padding: 20px 25px;
+  font-size: 20px;
+  border: none;
+}
+
+/* header  start*/
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* nav */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3.1rem;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.banner-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.banner-image {
+  width: 100%;
+  margin-bottom: 45px;
+}
+/* header end */
+
+/* main start */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* team and features */
+.teams {
+  align-items: center;
+  gap: 75px;
+  margin-bottom: 130px;
+}
+.team-img-container {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-left: 60px;
+}
+.our-features {
+  max-width: 530px;
+}
+
+#quick-list {
+  font-weight: 500;
+}
+
+/* media query */
+/* small device */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0px;
+  }
+  .our-features {
+    text-align: center;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    padding-left: 0px;
+  }
+}
