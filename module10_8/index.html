@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: purple;
+        --secondary-color: green;
+        --para-color: rgb(87, 87, 158);
+      }
+
+      h1 {
+        color: var(--primary-color);
+      }
+      h5 {
+        background: var(--secondary-color);
+      }
+      .box {
+        border: 2px solid var(--primary-color);
+        width: calc(100% - 200px);
+      }
+      .box p {
+        color: var(--para-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Custom Properties</h1>
+    <h5>Also Known as css property</h5>
+    <div class="box">
+      <h3>I am doing something</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque libero
+        illo et similique adipisci voluptate laboriosam recusandae eum! Autem
+        quo rerum corporis quia facere provident accusantium saepe, sed incidunt
+        laudantium!
+      </p>
+    </div>
+  </body>
+</html>

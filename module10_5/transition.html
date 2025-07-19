@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .box {
+        background: burlywood;
+        border: 1px solid red;
+        height: 200px;
+        width: 300px;
+        /* property name | duration | easing function | delay */
+        /* transition: width 4s ease-in-out 1s, background-color 2s ease-in-out 1s; */
+        transition: transform 1s;
+      }
+      .box:hover {
+        /* width: 400px; */
+        /* background-color: blueviolet; */
+        transform: rotate(45deg) scale(1.25) translate(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        transform: allows you to apply 2D or 3D effects to elements like:
+        scale(): resize rotate(): spin translate(): move skew(): distort
+      </li>
+      <li>
+        translate: (x, y) moves an element along the X and Y axes without
+        affecting its original layout.
+      </li>
+      <li>
+        transition: defines how long a CSS change takes, making it smooth
+        instead of instant.
+      </li>
+    </ul>
+    <div class="box">
+      <h3>Box 1</h3>
+    </div>
+    <div class="box">
+      <h3>Box 2</h3>
+    </div>
+    <div class="box">
+      <h3>Box 3</h3>
+    </div>
+  </body>
+</html>
