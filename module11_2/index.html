@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Setup</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1 class="text-7xl text-gray-600">Intro to tailwind</h1>
+    <h3 class="text-3xl bg-linear-to-t from-sky-500 to-indigo-500">
+      Exploring CSS via Utility Classes
+    </h3>
+    <p class="underline text-center">This is Exiting</p>
+    <button class="outline-2 outline-offset-4">Submit</button>
+    <!-- responsive section -->
+    <section class="border my-10 mx-5">
+      <h1 class="text-3xl">My responsive Section</h1>
+      <p class="bg-gray-300 lg:bg-gray-600 md:bg-red-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius
+        animi sed numquam fuga, adipisci vel expedita repellendus voluptates
+        sapiente et suscipit? Maxime, nesciunt impedit.
+      </p>
+    </section>
+    <!-- section grid -->
+    <section class="grid md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div class="bg-pink-300 text-2xl">grid 1</div>
+      <div class="bg-pink-300 text-2xl">grid 2</div>
+      <div class="bg-pink-300 text-2xl">grid 3</div>
+      <div class="bg-pink-300 text-2xl">grid 4</div>
+      <div class="lg:col-span-3 bg-pink-300 text-2xl">grid 5</div>
+      <div class="bg-pink-300 text-2xl">grid 6</div>
+      <div class="bg-pink-300 text-2xl">grid 7</div>
+      <div class="lg row-span-3 bg-pink-300 text-2xl">grid 8</div>
+      <div class="bg-pink-300 text-2xl">grid 9</div>
+      <div class="bg-pink-300 text-2xl">grid 10</div>
+      <div class="bg-pink-300 text-2xl">grid 11</div>
+      <div class="bg-pink-300 text-2xl">grid 12</div>
+    </section>
+  </body>
+</html>
